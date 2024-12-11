@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/profilebgrd"
+    android:padding="20dp"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/logoutImageView"
+        android:layout_width="49dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:src="@drawable/profileimg"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/logoutImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/editProfileImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/editprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="50dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/nameTV">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Contact:"
+           android:textSize="20dp"
+           android:layout_marginTop="25dp"
+           />
+       <TextView
+           android:id="@+id/contactTV"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:textSize="25dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Email:"
+           android:textSize="20dp"
+           android:layout_marginTop="15dp"
+           />
+       <TextView
+           android:id="@+id/emailTV"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:textSize="25dp"/>
+   </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

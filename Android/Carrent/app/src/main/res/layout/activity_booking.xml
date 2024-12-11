@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookingActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:padding="25dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/booking_box">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/driving_license"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="License Number"
+                android:id="@+id/LicenseNumberET"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/booking_box">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calendar"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/NumberofdaysET"
+                android:hint="No: of days"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Your ID Proof"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:id="@+id/UploadIV"
+            android:layout_width="221dp"
+            android:layout_height="237dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/upload" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/continuebutton"
+            android:background="@drawable/getstart"
+            android:text="continue"
+            android:layout_marginTop="25dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

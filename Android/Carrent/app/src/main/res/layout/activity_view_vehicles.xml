@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lytgreen"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".ViewVehiclesActivity">
+
+
+
+
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/location_box"
+       android:layout_gravity="center"
+       android:padding="8dp"
+       android:layout_marginTop="20dp"
+       android:id="@+id/locationET"
+       android:drawableRight="@drawable/icon_search"
+       android:hint="location"/>
+
+   <Button
+       android:layout_width="135dp"
+       android:layout_height="46dp"
+       android:text="Search"
+       android:id="@+id/searchbtn"
+       android:layout_gravity="center"
+       android:layout_marginTop="15dp"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/VehicleRV"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="No Vehicles Available"
+       android:gravity="center"
+       android:id="@+id/NoVehicleTV"
+       android:textSize="20dp"
+       android:visibility="gone"/>
+</LinearLayout>
